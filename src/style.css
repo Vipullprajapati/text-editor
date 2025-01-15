@@ -6,6 +6,19 @@
 body {
   background-color: #f5e475;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    color: #020929;
+}
+
+.header img {
+  width: 30px;
+}
+
 .container {
   background: rgb(34, 193, 195);
   background: linear-gradient(
@@ -21,6 +34,14 @@ body {
   top: 50%;
   border-radius: 10px;
   box-shadow: 0 25px 50px rgba(7, 20, 35, 0.2);
+}
+.container-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: bisque;
+  text-shadow: #020929 0px 0px 20px;
 }
 .options {
   display: flex;
@@ -79,4 +100,25 @@ input[type="color"]::-moz-color-swatch {
 }
 .active {
   background-color: #e0e9ff;
+}
+
+@media  (max-width: 1000px) {
+  .container {
+    width: 90vmin;
+    padding: 50px 10px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 55%;
+  }
+  .header {
+    font-size: 15px;
+    padding: 10px;
+  }
+  .header img {
+    width: 20px;
+  }
+  #text-input {
+    height: 40vh;
+  }   
+  
 }

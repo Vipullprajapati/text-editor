@@ -8,6 +8,7 @@ let alignButtons = document.querySelectorAll(".align");
 let spacingButtons = document.querySelectorAll(".spacing");
 let formatButtons = document.querySelectorAll(".format");
 let scriptButtons = document.querySelectorAll(".script");
+let refreshButton = document.querySelector(".refresh-logo");
 
 //List of fontlist
 let fontList = [
@@ -79,6 +80,11 @@ linkButton.addEventListener("click", () => {
     userLink = "http://" + userLink;
     modifyText(linkButton.id, false, userLink);
   }
+});
+
+//refresh
+refreshButton.addEventListener("click", () => {
+  window.location.reload();
 });
 
 //Highlight clicked button
